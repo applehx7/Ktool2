@@ -13,7 +13,7 @@ defs.banner()
 
 if defs.detect_os() != 'debian':
     print(defs.bcolors.FAIL+"You Need to use a debian based distro to Insttall kali meta packages! Exiting..."+defs.bcolors.ENDC)
-    # sys.exit()
+    sys.exit()
 
 kali_url = 'https://www.kali.org/docs/general-use/metapackages/'
 defs.check_response(kali_url)
