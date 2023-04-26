@@ -1,9 +1,9 @@
 import os
 import defs
-import scrap
-
 #Check If user is root or not
 defs.root_detect()
+import scrap
+
 
 tools = scrap.tools_name()
 op_s = defs.detect_os()
