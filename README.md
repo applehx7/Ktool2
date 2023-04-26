@@ -6,7 +6,7 @@ Easily install kali linux tools in Arch linux or any debian based linux like Ubu
 - Install Kali linux tools & meta packages
 
 # Requirements
-- Python
+- Python3
 - Pip
 - A linux operating system based on Arch or Debian
 
