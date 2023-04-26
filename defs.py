@@ -76,10 +76,10 @@ def detect_os():
     file_content = file.read()
     file.close()
     dictionary = {}
-    for i in file_content.split():
-        tup = (tuple(i.split('=')))
+    spl = file_content.split("\n")
+    for i in range(len(spl)-1):
+        tup = (tuple(spl[i].split('=')))
         dictionary[tup[0]] = tup[1]
-
     if dictionary['ID_LIKE'].strip() != 'arch' and dictionary['ID_LIKE'] != 'debian':
         print(bcolors.FAIL + "\tOperating SYSTEM NOT SUPPORTED!!" + bcolors.ENDC)
         sys.exit()
