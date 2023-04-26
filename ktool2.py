@@ -14,7 +14,7 @@ if tools[1] == 1 or tools[1] == 2:
     print(defs.bcolors.OKGREEN + "\tInstalling Kali Linux tools..." + defs.bcolors.ENDC)
     for i in tools[0]:
         print(defs.bcolors.WARNING + f"\tInstalling {i}..." + defs.bcolors.ENDC)
-        os.system(f"apt install {i}" if op_s == 'debian' else f"pacman -S {i}")
+        os.system(f"apt install -y {i}" if op_s == 'debian' else f"pacman -S --noconfirm {i}")
     print(defs.bcolors.WARNING + f"\tInstalled {i}..." + defs.bcolors.ENDC)
 
 
