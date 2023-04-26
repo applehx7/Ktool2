@@ -100,8 +100,9 @@ def add_repo(op_sys):
         print(bcolors.OKBLUE + "\tAdding Blackarch repo Completed...!" + bcolors.ENDC)
     elif op_sys == 'debian':
         print(bcolors.OKBLUE + "\tAdding Kali Linux repo..." + bcolors.ENDC)
-        os.system('chmod +x d_add.sh')
-        os.system('./d_add.sh')
+        os.system("echo '# Kali linux repositories | Added by Ktool2' >> /etc/apt/sources.list")
+        os.system("echo 'deb http://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list")
+        os.system("apt update")
         print(bcolors.OKBLUE + "\tDONE...!" + bcolors.ENDC)
     else:
         sys.exit()
