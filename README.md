@@ -14,7 +14,7 @@ Easily install kali linux tools in Arch linux or any debian based linux like Ubu
 **_NOTE:_**  Install pip and run with root access (use sudo).
 - git clone https://github.com/applehx7/Ktool2.git && cd Ktool2
 - sudo pip install -r requirements.txt
-- sudo python ktool2.py
+- sudo python3 ktool2.py
 
 # Contact
 - Twitter: @applehx7
